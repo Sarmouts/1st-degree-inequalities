@@ -169,55 +169,55 @@ int main()
 	}
 	else if (r == 4)
 	{
-	cout << "ax+c <= 0 " << endl << endl;
-	cout << "Enter a " << endl;
-	cin >> a;
-	cout << "Enter c " << endl;
-	cin >> c;
-	cout << a << "x+" << c << "<= 0" << endl << endl;
-	if (a == 0 && -c == 0)
-	{
-		cout << "The inequality 0x<0 is Impossible, the equation 0x=0 is an Identity xeR " << endl;
-	}
-	else if (a == 0)
-	{
-		if (-c < 0)
+		cout << "ax+c <= 0 " << endl << endl;
+		cout << "Enter a " << endl;
+		cin >> a;
+		cout << "Enter c " << endl;
+		cin >> c;
+		cout << a << "x+" << c << "<= 0" << endl << endl;
+		if (a == 0 && -c == 0)
 		{
-			cout << "The inequality and the equation are Impossible " << endl;
+			cout << "The inequality 0x<0 is Impossible, the equation 0x=0 is an Identity xeR " << endl;
 		}
-		else if (-c > 0)
+		else if (a == 0)
 		{
-			cout << "The inequality 0x<" << -c << " is Identity xeR, the equation 0x=" << -c << " is Impossible " << endl;
+			if (-c < 0)
+			{
+				cout << "The inequality and the equation are Impossible " << endl;
+			}
+			else if (-c > 0)
+			{
+				cout << "The inequality 0x<" << -c << " is Identity xeR, the equation 0x=" << -c << " is Impossible " << endl;
+			}
+
 		}
-
-	}
-	else if (-c == 0)
-	{
-		if (a > 0)
+		else if (-c == 0)
 		{
-			cout << "x <= 0 " << endl;
-		}
-		else if (a < 0)
-		{
-			cout << "x >= 0 " << endl;
-		}
+			if (a > 0)
+			{
+				cout << "x <= 0 " << endl;
+			}
+			else if (a < 0)
+			{
+				cout << "x >= 0 " << endl;
+			}
 
-	}
-	else
-	{
-		x = -c / a;
-
-		if (a < 0)
-		{
-
-			cout << "x >= " << x << endl;
 		}
 		else
 		{
-			cout << "x <= " << x << endl;
-		}
+			x = -c / a;
 
-	}
+			if (a < 0)
+			{
+
+				cout << "x >= " << x << endl;
+			}
+			else
+			{
+				cout << "x <= " << x << endl;
+			}
+
+		}
 
 	}
 
